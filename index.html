@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Carousel for FiftyThree</title>
+    <meta name="description" content="A carousel UI for a set of images, where: the currently selected/focused image always fits snugly within the viewport, with some reasonable padding, you can just see the edges of the next and/or previous images at the sides of the viewport, and you can navigate forward/backward (via arrow keys, mouse clicks, touch swipe). Also, images with a variety of resolutions and aspect ratios can be used.">
+    <meta name="author" content="Perry Azevedo">
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+
+  <body>
+
+    <div id="site-wrapper">
+
+      <header class="site-header">
+        <h1>Carousel for <img src="http://fiftythree.com/assets/images/logos/53-dark.svg" onerror="this.onerror=null; this.src='/assets/images/logos/53-64x64-dark.png'" class="logo"></h1>
+      </header>
+
+      <div id="myCarousel">
+        <div class="myCarousel-wrapper">
+          <img src="img/example_01.jpg" class="current">
+          <img src="img/example_02.jpg">
+          <img src="img/example_03.jpg">
+          <img src="img/example_04.jpg">
+          <img src="img/example_05.jpg">
+        </div>
+        <a href="" class="slide-left"></a>
+        <a href="" class="slide-right"></a>
+      </div>
+
+    </div><!-- .container -->
+
+    <!-- <footer class="site-footer">
+      <div class="container">
+        
+        &copy; 2014 Perry Azevedo
+
+      </div>
+    </footer> -->
+
+    <!-- Javascript Files -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/smartresize.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,120 @@
+#myCarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 200px;
+  
+  @include media($mobile) {
+    &:before, &:after { display: none; }
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 100;
+  }
+
+  &:before {
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, right top,
+          color-stop( 0.0, rgba($white, 0.5) ),
+          color-stop( 1.0, rgba($white, 0) ));
+    background-image: -webkit-linear-gradient(left,
+          rgba($white, 0.5), 
+          rgba($white, 0) );
+    background-image: -moz-linear-gradient(left,
+          rgba($white, 0.5), 
+          rgba($white, 0) );
+    background-image: -ms-linear-gradient(left,
+          rgba($white, 0.5), 
+          rgba($white, 0) );
+    background-image: -o-linear-gradient(left,
+          rgba($white, 0.5), 
+          rgba($white, 0) );
+    background-image: linear-gradient(left,
+          rgba($white, 0.5), 
+          rgba($white, 0) );
+  }
+
+  &:after {
+    right: 0;
+    background-image: -webkit-gradient(linear, left top, right top,
+          color-stop( 0.0, rgba($white, 0) ),
+          color-stop( 1.0, rgba($white, 0.5) ));
+    background-image: -webkit-linear-gradient(left,
+          rgba($white, 0), 
+          rgba($white, 0.5) );
+    background-image: -moz-linear-gradient(left,
+          rgba($white, 0), 
+          rgba($white, 0.5) );
+    background-image: -ms-linear-gradient(left,
+          rgba($white, 0), 
+          rgba($white, 0.5) );
+    background-image: -o-linear-gradient(left,
+          rgba($white, 0), 
+          rgba($white, 0.5) );
+    background-image: linear-gradient(left,
+          rgba($white, 0), 
+          rgba($white, 0.5) );
+  }
+
+  .myCarousel-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99999px;
+    height: 100%;
+
+    img {
+      display: block;
+      position: relative;
+      left: 0%;
+      top: 0px;
+      width: auto;
+      height: 100%;
+      margin-right: 20px;
+      float: left;
+      transition: -webkit-transform 0ms 0ms, visibility 0ms 0ms;
+      -webkit-transition: -webkit-transform 0ms 0ms, visibility 0ms 0ms;
+      visibility: visible;
+      -webkit-transform: translate3d(x, 0px, 0px);
+    }// img
+  }// .myCarousel-inner
+
+  a[class^="slide"] {
+    position: absolute;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    z-index: 200;
+    @include transform(rotate(45deg));
+    
+    &[class*="slide-left"] {
+      left: 50px;
+      border-left:    4px solid $black;
+      border-bottom:  4px solid $black;
+      &:hover {
+        border-left:    4px solid $orange;
+        border-bottom:  4px solid $orange;
+      }
+    }
+
+    &[class*="slide-right"] {
+      right: 50px;
+      border-right:   4px solid $black;
+      border-top:     4px solid $black;
+      &:hover {
+        border-right:   4px solid $orange;
+        border-top:     4px solid $orange;
+      }
+    }
+    &.disabled {
+      border: 0;
+      cursor: default;
+      &:hover { border: 0; }
+    }
+  }
+}// #myCarousel

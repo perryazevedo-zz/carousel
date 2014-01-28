@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  // height: 100%;
+}
+
+body {
+  background-color: $white;
+  font-family: 'AvenirNext-Regular', Helvetica, Arial, sans-serif;
+}
+
+// .container {
+//   margin: 0 auto;
+//   @include media($large)  { width: 1170px;  }
+//   @include media($medium) { width: 724px;   }
+//   @include media($small)  { 
+//     width: auto;
+//     padding-left: 10px;
+//     padding-right: 10px;
+//   }
+  
+// }
+
+// #site-wrapper {
+//   min-height: 100%;
+//   margin-bottom: -150px;
+
+//   &:after {
+//     content: "";
+//     display: block;
+//   } // for sticky footer
+// }
+
+header.site-header {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: $black;
+  
+  h1 {
+    text-transform: uppercase;
+    @include font-family(AvenirNext-Regular);
+    font-size: 32px;
+  }
+
+  .logo {
+    position: relative;
+    height: 49px;
+    top: 13px;
+    margin-left: 4px;
+  }
+}
+
+footer {
+  @include box-sizing(border-box);
+  width: 100%;
+  height: 150px;
+  padding: 50px 0;
+  background-color: $black;
+  color: $white;
+}
