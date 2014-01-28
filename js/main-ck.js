@@ -1,1 +1,0 @@
-$(function(){var e=$(".site-header").height();console.log(e)});
