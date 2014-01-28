@@ -378,8 +378,8 @@ footer {
   #myCarousel a[class^="slide"] {
     position: absolute;
     top: 50px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     z-index: 200;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -388,18 +388,18 @@ footer {
     transform: rotate(45deg); }
     #myCarousel a[class^="slide"][class*="slide-left"] {
       left: 50px;
-      border-left: 4px solid #252422;
-      border-bottom: 4px solid #252422; }
+      border-left: 3px solid #252422;
+      border-bottom: 3px solid #252422; }
       #myCarousel a[class^="slide"][class*="slide-left"]:hover {
-        border-left: 4px solid #ea5d27;
-        border-bottom: 4px solid #ea5d27; }
+        border-left: 3px solid #ea5d27;
+        border-bottom: 3px solid #ea5d27; }
     #myCarousel a[class^="slide"][class*="slide-right"] {
       right: 50px;
-      border-right: 4px solid #252422;
-      border-top: 4px solid #252422; }
+      border-right: 3px solid #252422;
+      border-top: 3px solid #252422; }
       #myCarousel a[class^="slide"][class*="slide-right"]:hover {
-        border-right: 4px solid #ea5d27;
-        border-top: 4px solid #ea5d27; }
+        border-right: 3px solid #ea5d27;
+        border-top: 3px solid #ea5d27; }
     #myCarousel a[class^="slide"].disabled {
       border: 0;
       cursor: default; }

@@ -19,7 +19,7 @@ $(function() {
     $('#myCarousel').height(sliderHeight);
     if (sliderHeight >= 400) {
       $('#myCarousel a[class^="slide"]').css({
-        "top" : sliderHeight / 2 - 50
+        "top" : sliderHeight / 2 - 40
       });
     } else if (sliderHeight > 250 && sliderHeight < 400) {
       $('#myCarousel a[class^="slide"]').css({

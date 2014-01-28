@@ -87,28 +87,28 @@
   a[class^="slide"] {
     position: absolute;
     top: 50px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     z-index: 200;
     @include transform(rotate(45deg));
     
     &[class*="slide-left"] {
       left: 50px;
-      border-left:    4px solid $black;
-      border-bottom:  4px solid $black;
+      border-left:      3px solid $black;
+      border-bottom:    3px solid $black;
       &:hover {
-        border-left:    4px solid $orange;
-        border-bottom:  4px solid $orange;
+        border-left:    3px solid $orange;
+        border-bottom:  3px solid $orange;
       }
     }
 
     &[class*="slide-right"] {
       right: 50px;
-      border-right:   4px solid $black;
-      border-top:     4px solid $black;
+      border-right:     3px solid $black;
+      border-top:       3px solid $black;
       &:hover {
-        border-right:   4px solid $orange;
-        border-top:     4px solid $orange;
+        border-right:   3px solid $orange;
+        border-top:     3px solid $orange;
       }
     }
     &.disabled {
